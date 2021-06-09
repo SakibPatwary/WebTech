@@ -12,49 +12,86 @@
 
 <p>&nbsp;&nbsp;1.Design the following HTML form and perform the following validations</p><br>
 <form action="/action_page.php">
- <fieldset>
-  <legend>NAME</legend>
+ <fieldset style="width: 370px;">
+  <legend><b>NAME</b></legend>
   <input type="text" id="name" name="name"><br>
+  <hr><br><br>
  </fieldset>
 </form>
 
 <p>&nbsp;&nbsp;2.Design the following HTML form and perform the following validations</p><br>
 <form action="/action_page.php">
- <fieldset>
-  <legend>EMAIL</legend>
+ <fieldset style="width: 370px;">
+  <legend><b>EMAIL</b></legend>
   <input type="text" id="name" name="name"><br>
+  <hr><br><br>
  </fieldset>
 </form>
 
 <p>&nbsp;&nbsp;3.Design the following HTML form and perform the following validations</p><br>
 <form action="/action_page.php">
- <fieldset>
-  <legend>DATE OF BIRTH</legend>
-  <input type="text" id="name" name="name"><br>
+ <fieldset style="width: 370px;">
+  <legend><b>DATE OF BIRTH</b></legend>
+  <label for="birthday"></label>
+  <input type="date" id="birthday" name="birthday">
+  <hr><br><br>
  </fieldset>
 </form>
 
 <p>&nbsp;&nbsp;4.Design the following HTML form and perform the following validations</p><br>
 <form action="/action_page.php">
- <fieldset>
-  <legend>GENDER</legend>
-  <input type="text" id="name" name="name"><br>
+ <fieldset style="width: 370px;">
+  <legend><b>GENDER</b></legend>
+
+  <input type="radio" id="gender1" name="gender" value="Male">
+  <label for="Male">Male</label>
+
+  <input type="radio" id="gender2" name="gender" value="Female">
+  <label for="Female">Female</label>
+
+  <input type="radio" id="gender3" name="gender" value="Other">
+  <label for="Other">Other</label>
+  <hr><br><br>
  </fieldset>
 </form>
 
 <p>&nbsp;&nbsp;5.Design the following HTML form and perform the following validations</p><br>
 <form action="/action_page.php">
- <fieldset>
-  <legend>DEGREE</legend>
-  <input type="text" id="name" name="name"><br>
+ <fieldset style="width: 370px;">
+  <legend><b>DEGREE</b></legend>
+
+  <input type="checkbox" id="degree1" name="degree1" value="SSC">
+  <label for="checkbox"> SSC</label>
+
+  <input type="checkbox" id="degree2" name="degree2" value="HSC">
+  <label for="checkbox2"> HSC</label>
+
+  <input type="checkbox" id="degree3" name="degree3" value="BSc">
+  <label for="checkbox3"> BSc</label>
+
+  <input type="checkbox" id="degree4" name="degree4" value="MSc">
+  <label for="checkbox4"> MSc</label>
+  <hr><br><br>
  </fieldset>
 </form>
 
 <p>&nbsp;&nbsp;6.Design the following HTML form and perform the following validations</p><br>
 <form action="/action_page.php">
- <fieldset>
-  <legend>BLOOD GROUP</legend>
-  <input type="text" id="name" name="name"><br>
+ <fieldset style="width: 370px;">
+  <legend><b>BLOOD GROUP</b></legend>
+  <select name="group" id="group" required>
+    <option value="A+">A+</option>
+    <option value="A-">A-</option>
+    <option value="B+">B+</option>
+    <option value="B-">B-</option>
+    <option value="AB+">AB+</option>
+    <option value="AB-">AB-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+  </select><br>
+  <hr><br>
+    
+  <input type="submit" value="Submit">
  </fieldset>
 </form>
 
