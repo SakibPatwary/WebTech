@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $month = "";   
     }
     if(!($year >= 1980 && $year <= 1999)){
-      $dateErr = "Year should be valid yyyy: 19580-1999"; 
+      $dateErr = "Year should be valid yyyy: 1980-1999"; 
       $year = "";   
     }
   }
@@ -129,9 +129,9 @@ function test_input($data) {
 
  <fieldset style="width: 370px;">
   <legend><b>DATE OF BIRTH</b></legend>
-  dd<input type="number" name="day" value="<?php echo $day;?>">
-    /mm<input type="number" name="month" value="<?php echo $month;?>">
-    /yyyy <input type="number" name="year" value="<?php echo $year ;?>">
+    <input type="number" name="day" value="<?php echo $day;?>">
+    <input type="number" name="month" value="<?php echo $month;?>">
+    <input type="number" name="year" value="<?php echo $year ;?>">
     <span class="error"><?php echo $dateErr;?></span>
   <hr><br><br>
  </fieldset>
