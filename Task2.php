@@ -129,10 +129,11 @@ function test_input($data) {
 
  <fieldset style="width: 370px;">
   <legend><b>DATE OF BIRTH</b></legend>
-    <input type="number" name="day" value="<?php echo $day;?>">
-    <input type="number" name="month" value="<?php echo $month;?>">
-    <input type="number" name="year" value="<?php echo $year ;?>">
-    <span class="error"><?php echo $dateErr;?></span>
+  dd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyy <br>
+  <input type="number" name="day" value="<?php echo $day;?>" style=width:25px;> /
+  <input type="number" name="month" value="<?php echo $month;?>" style=width:25px;>/
+  <input type="number" name="year" value="<?php echo $year ;?>" style=width:50px;>
+  <span class="error"><?php echo $dateErr;?></span>
   <hr><br><br>
  </fieldset>
 
@@ -142,9 +143,9 @@ function test_input($data) {
   <legend><b>GENDER</b></legend>
 
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-    <span class="error">* <?php echo $genderErr;?></span>
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
+  <span class="error">* <?php echo $genderErr;?></span>
   <hr><br><br>
  </fieldset>
 
@@ -153,7 +154,7 @@ function test_input($data) {
  <fieldset style="width: 370px;">
   <legend><b>DEGREE</b></legend>
 
-  <<input type="checkbox" name="degree[]" value="ssc" id ="degree"/>SSC <?php if (isset($degree) && $degree=="ssc ") echo "checked";?> 
+  <input type="checkbox" name="degree[]" value="ssc" id ="degree"/>SSC <?php if (isset($degree) && $degree=="ssc ") echo "checked";?> 
     <input type="checkbox" name="degree[]" value="hsc" />HSC <?php if (isset($degree) && $degree=="hsc") echo "checked";?> 
     <input type="checkbox" name="degree[]" value="bsc" />BSc<?php if (isset($degree) && $degree=="bsc") echo "checked";?> 
     <input type="checkbox" name="degree[]" value="msc" />MSc<?php if (isset($degree) && $degree=="msc") echo "checked";?> 
