@@ -129,10 +129,10 @@ function test_input($data) {
 
  <fieldset style="width: 370px;">
   <legend><b>DATE OF BIRTH</b></legend>
-  dd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyy <br>
-  <input type="number" name="day" value="<?php echo $day;?>" style=width:25px;> /
-  <input type="number" name="month" value="<?php echo $month;?>" style=width:25px;>/
-  <input type="number" name="year" value="<?php echo $year ;?>" style=width:50px;>
+  dd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyy <br>
+  <input type="number" name="day" value="<?php echo $day;?>" style=width:40px;> /
+  <input type="number" name="month" value="<?php echo $month;?>" style=width:40px;>/
+  <input type="number" name="year" value="<?php echo $year ;?>" style=width:80px;>
   <span class="error"><?php echo $dateErr;?></span>
   <hr><br><br>
  </fieldset>
