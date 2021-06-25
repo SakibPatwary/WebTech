@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php 
-$currPass = "abcd123#";
+$currPass = "sakib123#";
 $newPass = "";
 $newPassErr = $retPassErr = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -41,8 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <legend>Change Password</legend>	
 <p><?php echo $newPassErr; ?></p>
 <p><?php echo $retPassErr; ?></p>
-Current Password :<input type="text" name="currPass"><br>
-New Password :<input type="text" name="newPass"><br>
+Current Password :<input type="text" name="currPass"><br><br>
+New Password :<input type="text" name="newPass"><br><br>
 Retype New Passeord :<input type="text" name="retPass"><hr>
 <input type="submit" name="Submit">
 </fieldset>
