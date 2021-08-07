@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Add Product</title>
 </head>
 <body>
-<form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+<form method="post" action="connection.php">
 <fieldset style="width: 370px;">
   <legend><b>LOGIN</b></legend>
-  Product Name:<br> <input type="text" name="pname"><br><br>
-  Buying Price:<br> <input type="text" name="bprice"><br><br>
-  Selling Price:<br> <input type="text" name="sprice"><br><br>
+  Product Name:<br> <input type="text" name="pname"required><br><br>
+  Buying Price:<br> <input type="number" name="bprice"required><br><br>
+  Selling Price:<br> <input type="number" name="sprice"required><br><br>
 
-  <input type="submit" name="save" value= "Save">
+  <input type="submit" name="submit" value= "Save">
 </fieldset>
 </form>
 </body>
